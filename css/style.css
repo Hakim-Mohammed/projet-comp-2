@@ -126,7 +126,7 @@ hr {
     font-size: 20px; 
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
-    overflow: hidden;
+    /* overflow: hidden; */
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -189,4 +189,35 @@ summary{
 
 .liens{
     font-family: 'Chewy', cursive;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1275px){
+    img{
+        float: left;
+        width: 250px;
+        height: 125px; 
+        margin-right: 10px;
+    }
+
+    .fb{
+        width: 300px;
+        height: 375px;
+    }
+}
+
+@media screen and (max-width: 799px){
+    img{
+        float: inherit;
+        width: 250px;
+        height: 125px; 
+        margin-right: 10px;
+    }
+
+    
+    .fb{
+        display: none;
+    }
+    /* p{
+        overflow: none;
+    } */
 }
