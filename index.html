@@ -25,24 +25,67 @@
     </header>
 
     <nav>
+        <label for="menu-mobile" class="menu-mobile">Menu</label>
+        <input type="checkbox" id="menu-mobile" role="button">
         <ul>
-            <li><a href="index.html">Actualités</a></li>
-            <li><a href="pages/plongée.html">Plongée</a></li>
-            <li><a href="pages/hockey.html">Hockey</a></li>
-            <li><a href="pages/archives.html">Archives</a></li>
-            <li><a href="pages/calendrier.html">Calendrier</a></li>
+            <li class="menu-index"><a href="index.html">Actualités</a>
+                <ul class="submenu">
+                    <li><a href="#histoire">Un peu d'histoire</a></li>
+                    <li><a href="#partenaire">Nos partenaires</a></li>
+                    <li><a href="#fédération">La féderation</a></li>
+                </ul>
+            </li>
+            <li class="menu-plongée"><a href="pages/plongée.html">Plongée</a>
+                <ul class="submenu">
+                    <li><a href="#">La plongée</a></li>
+                    <li><a href="#">Devenir plongeur</a></li>
+                    <li><a href="#">Matériel</a></li>
+                    <li><a href="#">Niveaux</a></li>
+                    <li><a href="#">Bulletin d'incription</a></li>
+                </ul>
+            </li>
+            <li class="menu-hockey"><a href="pages/hockey.html">Hockey</a>
+                <ul class="submenu">
+                    <li><a href="#">Hockey quoi?</a></li>
+                    <li><a href="#">Devenir joueur</a></li>
+                    <li><a href="#">Matériel</a></li>
+                    <li><a href="#">Entrainement</a></li>
+                    <li><a href="#">Palmares</a></li>
+                    <li><a href="#">Bulletin d'incription Hockey</a></li>
+                </ul>
+            </li>
+            <li class="menu-calendrier"><a href="pages/calendrier.html">Calendrier</a>
+                <ul class="submenu">
+                    <li><a href="#">Sortie plongée</a></li>
+                    <li><a href="#">Calendrier Hockey</a></li>
+                    <li><a href="#">Résultat Hockey</a></li>
+                </ul>
+            </li>
+            <li class="menu-archives"><a href="pages/archives.html">Archives</a>
+                <ul class="submenu">
+                    <li><a href="#">Revue de presse</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Vidéos</a></li>
+                </ul>
+            </li>
+            <li class="menu-contact"><a href="pages/contact.html">Contact</a>
+                <ul class="submenu">
+                    <li><a href="#">Nous contacter</a></li>
+                    <li><a href="#">Formulaire question/réponse</a></li>
+                </ul>
+            </li>
         </ul>   
     </nav>
 
-    <section class="sousContainer">
+    <section class="souscontainer">
  
         <div class="gauche">
             <article class="article1">
-                <h3>Un peu d'histoire <br/>
+                <h3 id="histoire">Un peu d'histoire <br/>
                 Le Club</h3>
                 <hr />
-                <p><img src="images/piscine ft.jpg" alt="la piscine de Fontenay-Trésigny">
-   
+                <img src="images/piscine ft.jpg" alt="la piscine de Fontenay-Trésigny">
+                <p>
                
                 Le Club Subaquatique de la Marsange et du Bréon est une association de loi 1901 qui a été créé en 1983 par Henry Veysset. Son nom, fait référence à deux rivières du secteur.
 
@@ -61,11 +104,11 @@
             </article>   
 
              <article class="article2">
-                 <h3>Ceux qui nous aident<br/>
+                 <h3 id="partenaire">Ceux qui nous aident<br/>
                 Nos partenaires</h3>
                 <hr />
-                <p><img class="partenaire" src="images/partenaire.jpg" alt="poignée de main">
-
+                <img class="partenaire" src="images/partenaire.jpg" alt="poignée de main">
+                <p>
                 Le Club de Fontenay Trésigny remercie ses partenaires qui le soutient financièrement:<br/>
                     -Mairie de Fontenay-Trésigny<br/>
                     -Direction départementale de la Jeunesse et des Sports<br/>
@@ -81,11 +124,11 @@
             </article>
 
             <article class="article3">
-                <h3>De qui on dépend ?<br/>
+                <h3 id="fédération">De qui on dépend ?<br/>
                     La fédération</h3>    
                 <hr />
-                <p><img class="fédé"  src="images/federation.jpg" alt="logo de la fédération">
-
+                <img class="fédé"  src="images/federation.jpg" alt="logo de la fédération">
+                <p>
                 Le Club de Fontenay Trésigny est lié à la Fédération Française d'Étude et de Sport Sous-Marin.
                     La FFESSM, regroupe :<br/>
                     
@@ -95,7 +138,7 @@
                     -La nage avec palme<br/>
                     -La randonnée<br/>
                     -etc...<br/>
-                    retrouvez tous les sports de la fédé sur leur<a href="https://ffessm.fr/"title="site de la fédération"> site</a></p>
+                    retrouvez tous les sports de la fédération sur leur<a href="https://ffessm.fr/"title="site de la fédération"> site</a></p>
                 
             </article>   
         </div>  

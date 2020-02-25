@@ -18,18 +18,18 @@ body {
     background: rgba(255, 255, 255, 0.5);
 }
 
-.sousContainer {
+.souscontainer {
     display: flex;
 }
 
-.sousContainer .gauche {
+.souscontainer .gauche {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
 }
 
-.sousContainer .droite {
+.souscontainer .droite {
     display: flex;
     flex-direction: column;
 }
@@ -56,11 +56,11 @@ header img {
 
 h1 {
     color: white;
-    font-size: 50px;
+    font-size: 3.12em;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 1.87em;
     margin-top: -30px;
 }
 
@@ -68,13 +68,171 @@ h2 {
     font-size: 54px
 }/*  autre pages */
 
-/*nav*/ 
+/*nav*/
+nav{ 
+    width:100%;
+    background-color:#3DB5E3;
+} 
 
-nav {
+nav > ul{
+    margin: 0;
+    padding: 0;
+}
+
+nav li{
+    list-style-type: none;
+    font-size: 1.37em;
+}
+
+nav > ul > li{
+    float: left;
+    position: relative;
+}
+
+nav > ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.submenu{
+    display: none;
+}
+
+nav input[type=checkbox]{
+    display: none;
+}
+
+nav label{
+    display: none;
+}
+
+nav a{
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: #E94D14;
+}
+
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+nav li:hover .submenu{
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    padding: 0px;
+    z-index: 1000;
+}
+
+.submenu li a{
+    padding: 15px 30px;
+    font-size: 13px;
+    color: rgb(250, 6, 6);
+    width: 270px;
+}
+
+.submenu li{
+    border-bottom: 1px solid #E94D14;
+}
+
+.menu-index:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-plongée:hover{
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-hockey:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-calendrier:hover{
+    border-top: 5px solid #e44d26;
+    background-color: rgba(228, 77, 38, 0.15);
+}
+
+.menu-archives:hover{
+    border-top: 5px solid #0070bb;
+    background-color: rgba(000, 112, 192, 0.15);
+}
+
+.menu-contact:hover{
+    border-top: 5px solid #f1dc4f;
+    background-color: rgba(241, 211, 79, 0.15);
+}
+
+.menu-index .submenu{
+    background-color: rgb(230, 100, 40);
+}
+
+.menu-plongée .submenu{
+    background-color: rgb( 000, 160, 240);
+}
+
+.menu-hockey .submenu{
+    background-color: rgb( 250, 215, 100);
+}
+
+.menu-calendrier .submenu{
+    background-color: rgb(230, 100, 40);
+}
+
+.menu-archives .submenu{
+    background-color: rgb( 000, 160, 240);
+}
+
+.menu-contact .submenu{
+    background-color: rgb( 250, 215, 100);
+}
+
+.submenu li:hover{
+    color: #eee;
+    font-weight: bold;
+}
+
+.menu-index .submenu li:hover{
+    background-color: rgb(210, 77,60);
+}
+
+.menu-plongée .submenu li:hover{
+    background-color: rgb(000, 115, 200);
+}
+
+.menu-hockey .submenu li:hover{
+    background-color: rgb(200, 165, 75);
+}
+
+.menu-calendrier .submenu li:hover{
+    background-color: rgb(210, 77,60);
+}
+
+.menu-archives .submenu li:hover{
+    background-color: rgb(000, 115, 200);
+}
+
+.menu-contact .submenu li:hover{
+    background-color: rgb(200, 165, 75);
+}
+
+nav input[type=checkbox]:checked ~ ul{
+    display: block;
+}
+
+/* nav {
     display:flex;
     flex-direction: row;
     justify-content: flex-start;
-    margin-top: -18px;
+   
 }
  
 ul {
@@ -95,18 +253,26 @@ ul {
 ul li {
     /* border: 1px solid black;
     padding-left: 135px;
-    padding-right: 135px; */
-    font-size: 22px;
+    padding-right: 135px; */ */
+    /* font-size: 22px;
 }
 
 li a {
     color: #E94D14;
     text-decoration: none;     
-}
+} */
  
 /* section */
+ nav ul  {
+    width: 100%;
+    display: flex;  
+    justify-content: space-around;
+    align-content: center;
+}
 
- h3 {
+
+
+.souscontainer h3 {
     font-size: 30px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -123,10 +289,10 @@ hr {
     border: 0;
   }
  p { 
-    font-size: 20px; 
+    font-size: 1.12em; 
     font-family: 'Roboto', sans-serif;
     font-weight: bolder;
-    /* overflow: hidden; */
+    text-align: justify;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -142,10 +308,11 @@ summary{
 
  img {
     float: left;
-    width: 300px;
-    height: 230px; 
+    width: 18.75em;
+    height: 14.37em
+    ; 
     margin-right: 20px;
-    /* margin-left: 20px;   */
+    margin-left: 20px;  
 }
 
 /* .partenaire{
@@ -191,13 +358,8 @@ summary{
     font-family: 'Chewy', cursive;
 }
 
-@media screen and (min-width: 800px) and (max-width: 1275px){
-    img{
-        float: left;
-        width: 250px;
-        height: 125px; 
-        margin-right: 10px;
-    }
+@media screen and (min-width: 811px) and (max-width: 1275px){
+   
 
     .fb{
         width: 300px;
@@ -205,19 +367,69 @@ summary{
     }
 }
 
-@media screen and (max-width: 799px){
-    img{
-        float: inherit;
-        width: 250px;
-        height: 125px; 
-        margin-right: 10px;
+@media screen and (max-width: 810px){
+    
+    .menu-mobile{
+        display: block;
+        color: #3db5e4;
+        background-color: rgba(29, 197, 151, 0.97);
+        text-align: center;
+        padding: 12px 0px;
+    }
+    
+    nav ul{
+        display: none;
     }
 
+    nav ul li, nav ul li a{
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li a, nav ul li:hover a{
+        padding: 10px 0px;
+    }
+
+    nav li:hover .submenu{
+        display: block;
+        position: static;
+    }
+    
+    
+    
+    
+    img{
+        float: none;
+        /* width: 250px;
+        height: 125px;  */
+        margin-right: 10px;
+        text-align: center;
+    }
+
+   .article3, .article2, .article1 {
+       text-align: center;
+   }
+
+   hr{
+       margin-left: 10.6em;
+       margin-right: 10em;
+   }
     
     .fb{
         display: none;
     }
-    /* p{
-        overflow: none;
-    } */
+
+    h1{
+        font-size: 1.87em;
+    }
+
+    h2{
+        font-size: 1.35em;
+    }
+
+    footer{
+        height: 65px;
+    }
+
+    
 }
